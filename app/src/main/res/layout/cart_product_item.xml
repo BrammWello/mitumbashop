@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cart_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bdDeleteCartItem">
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Delete"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+            app:layout_constraintEnd_toStartOf="@+id/imageView24"
+            app:layout_constraintTop_toTopOf="@+id/imageView24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cart_item_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/cart_product_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/black_round_toe_stiletto_buckle" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cart_product_price"
+            app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+            app:layout_constraintStart_toEndOf="@+id/cart_product_quantity"
+            app:layout_constraintTop_toTopOf="@+id/imageView27"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+        <TextView
+            android:id="@+id/cart_product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+            app:layout_constraintStart_toEndOf="@+id/imageView27"
+            app:layout_constraintTop_toTopOf="@+id/imageView27" />
+
+        <TextView
+            android:id="@+id/cart_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Black Round Toe Stiletto Buckle"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/cart_product_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cart_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="KES 3000.00"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cart_product_name" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cart_product_color"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="24dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_product_quantity"
+            app:layout_constraintEnd_toStartOf="@+id/cart_product_image"
+            app:layout_constraintTop_toTopOf="@+id/cart_product_quantity">
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/cart_product_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Size"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_product_quantity"
+            app:layout_constraintEnd_toStartOf="@+id/cart_product_color"
+            app:layout_constraintTop_toTopOf="@+id/cart_product_quantity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

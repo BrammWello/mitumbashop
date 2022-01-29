@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_checkout_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close_black_24dp" />
+
+        <ImageView
+            android:id="@+id/checkout_shipping_payment_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView45"
+            app:srcCompat="@drawable/ic_account_balance_wallet_black_24dp" />
+
+        <ImageView
+            android:id="@+id/checkout_shipping_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintEnd_toStartOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkout_shipping_payment_icon"
+            app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+        <ImageView
+            android:id="@+id/checkout_confirm_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintTop_toTopOf="@+id/checkout_shipping_payment_icon"
+            app:srcCompat="@drawable/ic_local_shipping_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_checkout_close"
+            app:layout_constraintEnd_toEndOf="@+id/checkout_confirm_icon"
+            app:layout_constraintStart_toStartOf="@+id/checkout_shipping_icon"
+            app:layout_constraintTop_toTopOf="@+id/btn_checkout_close" />
+
+        <TextView
+            android:id="@+id/checkout_shipping_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Shipping"
+            android:textColor="@color/colorTextWhite"
+            app:layout_constraintEnd_toEndOf="@+id/checkout_shipping_icon"
+            app:layout_constraintStart_toStartOf="@+id/checkout_shipping_icon"
+            app:layout_constraintTop_toBottomOf="@+id/checkout_shipping_icon" />
+
+        <TextView
+            android:id="@+id/checkout_payment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Payment"
+            android:textColor="@color/colorTextWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintStart_toStartOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintTop_toBottomOf="@+id/checkout_shipping_payment_icon" />
+
+        <TextView
+            android:id="@+id/checkout_confirm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Confirm"
+            android:textColor="@color/colorTextWhite"
+            app:layout_constraintEnd_toEndOf="@+id/checkout_confirm_icon"
+            app:layout_constraintStart_toStartOf="@+id/checkout_confirm_icon"
+            app:layout_constraintTop_toBottomOf="@+id/checkout_confirm_icon" />
+
+        <View
+            android:id="@+id/checkout_shipping_done_icon"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/colorTextWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintEnd_toStartOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintStart_toEndOf="@+id/checkout_shipping_icon"
+            app:layout_constraintTop_toTopOf="@+id/checkout_shipping_payment_icon" />
+
+        <View
+            android:id="@+id/checkout_payment_done_icon"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/colorTextWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintEnd_toStartOf="@+id/checkout_confirm_icon"
+            app:layout_constraintStart_toEndOf="@+id/checkout_shipping_payment_icon"
+            app:layout_constraintTop_toTopOf="@+id/checkout_shipping_payment_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/back_step"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/next_step"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/back_step"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView49"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView49"
+                    app:layout_constraintTop_toTopOf="@+id/textView49"
+                    app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <FrameLayout
+            android:id="@+id/fragment_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

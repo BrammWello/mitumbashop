@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9F21F2</color>
+    <color name="colorPrimaryDark">#5D0299</color>
+    <color name="colorAccent">#E428D7</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorCategoryTint">#4D5D0299</color>
+    <color name="cardGrey">#BF000000</color>
+    <color name="cartBackground">#4527A0</color>
+    <color name="confirmFragmentColor">#04000000</color>
+    <color name="fadedLine">#1A000000</color>
+    <color name="bdDeleteCartItem">#DD2C00</color>
+</resources>

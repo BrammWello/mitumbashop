@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "515848346865",
+    "firebase_url": "https://mitumba-shop.firebaseio.com",
+    "project_id": "mitumba-shop",
+    "storage_bucket": "mitumba-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515848346865:android:06ff2d62e0ed37137a9d50",
+        "android_client_info": {
+          "package_name": "com.devbramm.mitumba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515848346865-3ut3sjlc5kjut9jau59e5cqfpigoqfsu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devbramm.mitumba",
+            "certificate_hash": "062819dce52883e1660097d7e6851b3c8cbc7565"
+          }
+        },
+        {
+          "client_id": "515848346865-3jsvfja0guuu4kp9boqr27j72l6ht7qn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-lRDYvv7WPzKz-Mwa9Yatp7K9KSsUJbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515848346865-3jsvfja0guuu4kp9boqr27j72l6ht7qn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
